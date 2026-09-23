@@ -25,7 +25,7 @@
 
 
 // My first Node.js code 
-// const name = 'Sam'
-// const age = 24
-// console.log(`My name is ${name}`)
-// console.log(`I am ${age} years old.`)
+const name = 'Sam'
+const age = 24
+console.log(`My name is ${name}`)
+console.log(`I am ${age} years old.`)
