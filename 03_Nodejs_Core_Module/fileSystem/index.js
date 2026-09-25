@@ -4,7 +4,7 @@
 
 
 
-import fs, { read } from "node:fs"
+// import fs, { read } from "node:fs"
 
 
 
@@ -63,3 +63,144 @@ import fs, { read } from "node:fs"
 //         console.log('Update file name successfully')
 //     }
 // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fs module using promisses , 
+import fs from 'node:fs/promises'
+// const fs = require('fs/promises')
+// const fs = require('fs').promises
+
+
+// fs.writeFile('new.txt', 'This is a new file')
+// .then(() => {
+//     console.log('File created successfully')
+// })
+// .catch((err) => {
+//     console.log('Error writing file ', err)
+// })
+
+// fs.readFile('new.txt', 'utf-8')
+// .then((data) => {
+//     console.log('Reading file successfully ', data)
+// })
+// .catch((err) => {
+//     console.log('Error reading file ', err)
+// })
+
+
+// fs.appendFile('new.txt', '\nThis line is added.')
+// .then(() => {
+//     console.log('Append file successfully')
+// })
+// .catch((err) => {
+//     console.log('Error append file ', err)
+// })
+
+
+// fs.unlink('test.txt')
+// .then(() => {
+//     console.log('File deleted successfully')
+// })
+// .catch((err) => {
+//     console.log('Error deleting file ', err)
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fs module using async/await 
+
+// async function writeFile() {
+//     try {
+//         await fs.writeFile('async.txt', 'This is async function text file')
+//         console.log('File created successfully')
+//     } catch (err) {
+//         console.log('Error writing file ', err)
+//     }
+// }
+// writeFile()
+
+
+// async function readFile(){
+//     try {
+//         let read = await fs.readFile('async.txt', 'utf-8')
+//         console.log('Read file successfully ', read)
+//     } catch (error) {
+//         console.log('Error reading file ', error)
+//     }
+// }
+// readFile()
+
+
+// async function appendFile(){
+//     try {
+//         await fs.appendFile('async.txt', '\nThis is new text added to async.txt file')
+//         console.log('Append file successfully ')
+//     } catch (error) {
+//         console.log('Error append file ', error)
+//     }
+// }
+// appendFile()
+
+
+// async function unlinkFile() {
+//     try {
+//         await fs.unlink('del.txt')
+//         console.log('File deleted successfully')
+//     } catch (error) {
+//         console.log('Error unlink file ', error)
+//     }
+// }
+// unlinkFile()
+
+
+
+// CRUD file example 
+// async function crudFile(){
+//     try {
+//         // create/overwrite file 
+//         await fs.writeFile('hello.txt', 'Welcome to Nodejs module')
+//         console.log('File created successfully')
+
+//         // read file 
+//         let read = await fs.readFile('hello.txt', 'utf-8')
+//         console.log('Read file successfully ', read)
+
+//         // append file 
+//         await fs.appendFile('hello.txt', '\nThis is new text added to async text file')
+//         console.log('Append file successfully')
+//         let read1 = await fs.readFile('hello.txt', 'utf-8')
+//         console.log('Read file successfully ', read1)
+
+//         // delete file 
+//         await fs.unlink('hello.txt')
+//         console.log('Delete file successfully')
+
+        
+//     } catch (error) {
+//         console.log('Error crud file ', error)
+//     }
+// }
+// crudFile()
