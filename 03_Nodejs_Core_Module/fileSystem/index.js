@@ -52,3 +52,14 @@ import fs, { read } from "node:fs"
 //     }
 //     console.log('file deleted')
 // })
+
+
+
+// To rename existing file name 
+// fs.rename('updated_text.txt', 'text.txt', (err) => {
+//     if(err){
+//         console.error('Error to update file name ', err)
+//     } else{
+//         console.log('Update file name successfully')
+//     }
+// })
