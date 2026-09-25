@@ -9,25 +9,46 @@ import fs, { read } from "node:fs"
 
 
 // This is used to create/write new file 
-// fs.writeFileSync('text.txt','Hello from Node.js')
-// console.log('File create successfully')
+// fs.writeFileSync('text.txt','Hello from Node.js', (err)=> {
+//     if(err){
+//         console.error('Error writting file ', err)
+//     }
+//     console.log('File create successfully')
+// })
 
 
 // This is used to read the file 
-// let readFile = fs.readFileSync('text.txt','utf-8')
-// console.log(readFile)
+// let readFile = fs.readFileSync('text.txt','utf-8', (err)=> {
+//     if(err){
+//         console.error('Error read file ', err)
+//     }
+//     console.log(readFile)
+// })
 
 
 // File mein content overwrite karna
-// fs.writeFileSync('text.txt','This text will overwrite the existing text.')
-// console.log('text updated')
+// fs.writeFileSync('text.txt','This text will overwrite the existing text.', (err) => {
+//     if(err){
+//         console.error('Error write file ', err)
+//     }
+//     console.log('text updated')
+// })
+
 
 
 // Add new text to existing file 
-// fs.appendFileSync('text.txt', '\nWelcome to Node.js learning.')
-// console.log('text added successfully.')
+// fs.appendFileSync('text.txt', '\nWelcome to Node.js learning.', (err) => {
+//     if(err){
+//         console.error('Error append file ', err)
+//     }
+//     console.log('text added successfully.')
+// })
 
 
 // Delete file 
-// fs.unlinkSync('sample.txt')
-// console.log('file deleted')
+// fs.unlinkSync('sample.txt', (err) => {
+//     if(err){
+//         console.error('Error to delete file ', err)
+//     }
+//     console.log('file deleted')
+// })
