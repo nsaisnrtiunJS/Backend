@@ -20,5 +20,5 @@ const callbackEvent = (name,age) => {
 }
 
 customEvent.on('removeListner', callbackEvent)
-customEvent.removeListener('removeListner', callbackEvent)
+// customEvent.removeListener('removeListner', callbackEvent)  //If you use removeListener to event to hoga par listener nehi chalega 
 customEvent.emit('removeListner', 'Sam', 25)
