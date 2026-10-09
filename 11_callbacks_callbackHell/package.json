@@ -1,0 +1,21 @@
+{
+  "name": "11_callbacks_callbackhell",
+  "version": "1.0.0",
+  "main": "callbackHell.js",
+  "type": "module",
+  "scripts": {
+    "node": "node callbackHell.js",
+    "dev": "nodemon callbackHell.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
