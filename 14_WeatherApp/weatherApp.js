@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 })
 
 rl.question('Enter your city : ', async (city) => {
-    const apiKey = 'e8d73b6332e2dd786093dc4b8a39d106'
+    const apiKey = 'Enter your API Key' //Replace with API key
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
     try {
