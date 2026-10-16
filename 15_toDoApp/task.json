@@ -10,5 +10,9 @@
   {
     "task": "Sleeping",
     "completed": false
+  },
+  {
+    "task": "Task 1",
+    "completed": false
   }
 ]
