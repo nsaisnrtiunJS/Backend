@@ -35,7 +35,7 @@ async function currencyConverter(from, to, amount){
 rl.question('Enter currency base code, like(USD): ', (from) => {
     rl.question('Enter from where you want to convert: ', (to) => {
         rl.question(`Enter amount: `, (amount)=>{
-            currencyConverter(from, to, amount)
+            currencyConverter(from, to, parseFloat(amount))
         })
     })
 })
